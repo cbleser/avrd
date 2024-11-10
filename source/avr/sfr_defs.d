@@ -40,7 +40,7 @@ public import avr.specs;
 
 import core.bitop;
 import ldc.attributes;
-
+import core.volatile : volatileStore, volatileLoad;
 /// Helper struct to automatically call volatileStore and volatileLoad on assignment/reading of pointers
 struct VolatileRef(T, alias addr)
 {
